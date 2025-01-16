@@ -5,7 +5,7 @@
             "type": "msedge",
             "request": "launch",
             "name": "Launch edge",
-            "file": "${workspaceFolder}/lesson.html",
+            "file": "${workspaceFolder}/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
