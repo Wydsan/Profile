@@ -1,7 +1,52 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+#header{
+  background: url(Photo/header1.png) no-repeat;
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.content-sheet {
+    background-color: rgba(255, 255, 255, 0.66);
+    border-radius: 15px;
+    padding: 2em;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    margin-left: 2em; /* Убрали top и bottom margin */
+    margin-right: 2em;/* Убрали top и bottom margin */
   }
-  h1 {
-    color: green;
-  }
+
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p{
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .content-sheet {
+      margin-left: 1em; /* Уменьшили на мобильных */
+      margin-right: 1em; /* Уменьшили на мобильных */
+      padding: 1.5em;
+   }
+}
